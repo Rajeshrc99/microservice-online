@@ -19,3 +19,8 @@ spec:
         image: docker.io/library/nginx:latest
         ports:
         - containerPort: 80
+      resources:
+        requests: 
+          cpu: "100m"
+          limits: 
+            cpu: "200m"
